@@ -1,10 +1,6 @@
 const sequelize = require('./utils/dbConnection');
-const Employee = require('./models/employee');
-const EmergContact = require('./models/emergContact');
 const express = require('express');
 const app = express();
-
-Employee.hasMany(EmergContact);
 
 sequelize.sync()
     .then((result)=>{
