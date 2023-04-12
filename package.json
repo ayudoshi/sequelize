@@ -1,0 +1,29 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Infoware assignment on CRUD operations using Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayudoshi/sequelize.git"
+  },
+  "keywords": [
+    "Relationship",
+    "mapping",
+    "Sequelize",
+    "ORM",
+    "Pagination"
+  ],
+  "author": "Ayush Doshi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.31.0"
+  }
+}
