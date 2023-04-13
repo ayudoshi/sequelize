@@ -26,7 +26,9 @@ exports.createEmp = async (req, res) => {
             relation: emergc1.relation,
             relationType: emergc1.relationType
         }
-    );
+    ).catch((err)=>{
+        console.log(err);
+    });
 
     const emerg2 = await emp.createEmergContact(
         {
@@ -35,7 +37,9 @@ exports.createEmp = async (req, res) => {
             relation: emergc2.relation,
             relationType: emergc2.relationType
         }
-    );
+    ).catch((err)=>{
+        console.log(err);
+    });
 
     res.send("Created employee : "+name);
 };
